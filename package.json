@@ -1,0 +1,24 @@
+{
+  "name": "node-youtube",
+  "version": "1.0.0",
+  "description": "start nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qairkhan/NodeYouTube.git"
+  },
+  "keywords": [
+    "node",
+    "nodeJS",
+    "JS"
+  ],
+  "author": "qairkhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Qairkhan/NodeYouTube/issues"
+  },
+  "homepage": "https://github.com/Qairkhan/NodeYouTube#readme"
+}
