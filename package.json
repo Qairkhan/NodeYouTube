@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/Qairkhan/NodeYouTube/issues"
   },
-  "homepage": "https://github.com/Qairkhan/NodeYouTube#readme"
+  "homepage": "https://github.com/Qairkhan/NodeYouTube#readme",
+  "dependencies": {
+    "chalk": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
