@@ -1,4 +1,5 @@
-const chalk = require('chalk')
-const text = require('./data')
+const http = require('http')
 
-console.log(chalk.green(text))
+http.createServer((req, res)=> {
+    res.end('hello NodeJS server')
+})
