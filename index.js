@@ -34,7 +34,7 @@ fs.readFile(filePath, (err, content) => {
             if(err) {
                 res.writeHead(500)
                 res.end('Error')
-            } esle {
+            } else {
                 res.writeHead(200, {
                     'Content-type' : 'text/html'
                 })
@@ -47,6 +47,7 @@ fs.readFile(filePath, (err, content) => {
         })
         res.end(content)
     }
+})
 })
 
 
