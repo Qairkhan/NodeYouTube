@@ -26,8 +26,11 @@ const server = http.createServer((req, res)=> {
 //     }
 // })
 
-const filePath = path.join(__dirname, "public", req.url === '/' ? 'index.html' : req.url)
-
+let filePath = path.join(__dirname, "public", req.url === '/' ? 'index.html' : req.url)
+const ext = path.extname(filePath)
+if (!ext) {
+    filePath += '.html'
+}
 fs.readFile(filePath, (err, content) => {
     if (err) {
         fs.readFile(path.join(__dirname, 'public', 'error.html'), (err, data) => {
