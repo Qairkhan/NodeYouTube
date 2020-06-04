@@ -4,7 +4,7 @@ const path = require('path')
 
 const server = http.createServer((req, res)=> {
     if (req.url === "/") {
-        fs.readFile(path.join(__dirname, 'publiic', 'index.html'), (err, data) => {
+        fs.readFile(path.join(__dirname, 'public', 'index.html'), (err, data) => {
             if (err) {
                 throw err
             }
@@ -14,7 +14,7 @@ const server = http.createServer((req, res)=> {
             res.end(data)
         })
     } else if (req.url === "/contact") {
-        fs.readFile(path.join(__dirname, 'publiic', 'contact.html'), (err, data) => {
+        fs.readFile(path.join(__dirname, 'public', 'contact.html'), (err, data) => {
             if (err) {
                 throw err
             }
@@ -24,6 +24,7 @@ const server = http.createServer((req, res)=> {
             res.end(data)
         })
     }
+})
 
 
 server.listen(3000, ()=>{
