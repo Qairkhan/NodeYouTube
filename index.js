@@ -31,7 +31,7 @@ const ext = path.extname(filePath)
 if (!ext) {
     filePath += '.html'
 }
-fs.readFile(filePath, (err, content) => {
+fs.readFile(filePath, (err, contents) => {
     if (err) {
         fs.readFile(path.join(__dirname, 'public', 'error.html'), (err, data) => {
             if(err) {
@@ -48,7 +48,7 @@ fs.readFile(filePath, (err, content) => {
         res.writeHead(200, {
             'Content-type' : 'text/html'
         })
-        res.end(content)
+        res.end(contents)
     }
 })
 })
