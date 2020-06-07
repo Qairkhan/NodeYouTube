@@ -62,3 +62,9 @@ function test () {
     console.log('Hi');
 }
 test();
+
+let testtest = function() {
+console.log("just hi")
+};
+
+testtest();
