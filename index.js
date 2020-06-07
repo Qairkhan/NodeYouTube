@@ -63,8 +63,14 @@ function test () {
 }
 test();
 
+function call(func) {
+func();
+};
+
 let testtest = function() {
 console.log("just hi")
 };
+
+call(testtest);
 
 testtest();
