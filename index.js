@@ -58,19 +58,19 @@ const path = require('path')
 //     console.log('server has been started...')
 // })
 
-function test () {
-    console.log('Hi');
-}
-test();
+// function test () {
+//     console.log('Hi');
+// }
+// test();
 
-function call(func) {
-func();
-};
+// function call(func) {
+// func();
+// };
 
-let testtest = function() {
-console.log("just hi")
-};
+// let testtest = function() {
+// console.log("just hi")
+// };
 
-call(testtest);
+// call(testtest);
 
-testtest();
+// testtest();
