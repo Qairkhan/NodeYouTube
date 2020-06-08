@@ -75,4 +75,5 @@ const path = require('path')
 
 // testtest();
 
-fs.readFileSync();
+var file_reader = fs.readFileSync('text.txt', 'utf8');
+console.log(file_reader)
