@@ -74,3 +74,5 @@ const path = require('path')
 // call(testtest);
 
 // testtest();
+
+fs.readFileSync();
