@@ -79,6 +79,8 @@ const path = require('path')
 // console.log(file_reader)
 
 var server = http.createServer(function(req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'})
+    res.writeHead(200, {'Content-Type': 'text/plain; charset=utf-8'})
     res.end('Hello world');
 });
+
+server.listen(3000, '')
