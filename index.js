@@ -78,4 +78,7 @@ const path = require('path')
 // var file_reader = fs.readFileSync('text.txt', 'utf8');
 // console.log(file_reader)
 
-var server = http.createServer();
+var server = http.createServer(function(req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'})
+    res.end('Hello world');
+});
