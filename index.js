@@ -85,7 +85,7 @@ var server = http.createServer(function(req, res) {
         speed: '350',
         wheels: '4'
     };
-    res.end('Hello world');
+    res.end(JSON.stringify(obj));
 });
 
 server.listen(3000, '')
