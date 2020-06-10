@@ -79,7 +79,12 @@ const path = require('path')
 // console.log(file_reader)
 
 var server = http.createServer(function(req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain; charset=utf-8'})
+    res.writeHead(200, {'Content-Type': 'application/json; charset=utf-8'});
+    var obj = {
+        model: 'Tesla model x',
+        speed: '350',
+        wheels: '4'
+    };
     res.end('Hello world');
 });
 
