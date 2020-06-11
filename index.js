@@ -83,7 +83,7 @@ var server = http.createServer(function(req, res) {
     var obj = {
         model: 'Tesla model x',
         speed: '350',
-        wheels: '4'
+        wheels: '6'
     };
     res.end(JSON.stringify(obj));
 });
