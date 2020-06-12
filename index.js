@@ -1,6 +1,7 @@
 const http = require('http')
 const fs = require('fs')
 const path = require('path')
+const express = require('express')
 
 // const server = http.createServer((req, res)=> {
 //     if (req.url === "/") {
@@ -78,14 +79,16 @@ const path = require('path')
 // var file_reader = fs.readFileSync('text.txt', 'utf8');
 // console.log(file_reader)
 
-var server = http.createServer(function(req, res) {
-    res.writeHead(200, {'Content-Type': 'application/json; charset=utf-8'});
-    var obj = {
-        model: 'Tesla model x',
-        speed: '350',
-        wheels: '6'
-    };
-    res.end(JSON.stringify(obj));
-});
+// var server = http.createServer(function(req, res) {
+//     res.writeHead(200, {'Content-Type': 'application/json; charset=utf-8'});
+//     var obj = {
+//         model: 'Tesla model x',
+//         speed: '350',
+//         wheels: '6'
+//     };
+//     res.end(JSON.stringify(obj));
+// });
 
-server.listen(3000, '127.0.0.1')
+// server.listen(3000, '127.0.0.1')
+
+const app = express();
