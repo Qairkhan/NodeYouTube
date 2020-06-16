@@ -99,8 +99,8 @@ app.get('/', function(req, res){
 app.get('/news', function(req, res){
     res.send('This is news')
 });
-app.get('/news/:name/:id', function(req, res){
-    res.send('ID is - ' + req.params.name + req.params.id)
+app.get('/news/:name/:tag', function(req, res){
+    res.send('ID is - ' + req.params.name + req.params.tag)
 });
 
 app.listen(3000);
